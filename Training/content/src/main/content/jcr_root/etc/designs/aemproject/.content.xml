@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2015-01-31T17:57:35.542+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/wcm/core/templates/designpage"
+        jcr:mixinTypes="[]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="aemproject"
+        sling:resourceType="wcm/core/components/designer">
+        <basepage jcr:primaryType="nt:unstructured">
+            <par
+                jcr:lastModified="{Date}2014-12-30T11:25:32.611+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:Training">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+            <parsys
+                jcr:lastModified="{Date}2015-01-31T17:57:35.539+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:Communities">
+                <section jcr:primaryType="nt:unstructured"/>
+            </parsys>
+        </basepage>
+    </jcr:content>
+    <clientlibs/>
+    <customlibcs/>
+</jcr:root>

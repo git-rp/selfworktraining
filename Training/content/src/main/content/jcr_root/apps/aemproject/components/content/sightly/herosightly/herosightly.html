@@ -1,0 +1,11 @@
+<head data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+
+    <!–/* for css+js */–>
+    <meta data-sly-call="${clientLib.all @ categories='cq.authoring.dialog'}" data-sly-unwrap />
+
+</head>
+<p data-sly-text="${properties['jcr:Heading']}">My Name</p>
+<p data-sly-text="${properties['jcr:description']}">My Description</p>
+
+
+

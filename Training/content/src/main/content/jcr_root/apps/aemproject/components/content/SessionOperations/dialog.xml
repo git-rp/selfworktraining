@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="sessionoperations"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Sessionoperations">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <dialogfieldset
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}true"
+                        collapsible="{Boolean}true"
+                        title="Move"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <source
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Source"
+                                name="./source"
+                                xtype="pathfield"/>
+                            <destination
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Destination"
+                                name="./destination"
+                                xtype="pathfield"/>
+                        </items>
+                    </dialogfieldset>
+                    <dialogfieldset_1
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}true"
+                        collapsible="{Boolean}true"
+                        title="Add Property"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <source
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Select Page"
+                                name="./propadd"
+                                xtype="pathfield"/>
+                        </items>
+                    </dialogfieldset_1>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,118 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] AEM Training - Reactor Project
+[INFO] AEM Training Bundle
+[INFO] AEM Training Package
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AEM Training - Reactor Project 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Training ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ Training ---
+[INFO] Installing /media/vivek/Misc/SelfWork/ProjectRepo/Training/pom.xml to /home/vivek/.m2/repository/aaem/Training/1.0-SNAPSHOT/Training-1.0-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AEM Training Bundle 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Training-bundle ---
+[INFO] Deleting /media/vivek/Misc/SelfWork/ProjectRepo/Training/bundle/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Training-bundle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Training-bundle ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /media/vivek/Misc/SelfWork/ProjectRepo/Training/bundle/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.7.4:scr (generate-scr-descriptor) @ Training-bundle ---
+[INFO] Generating 6 MetaType Descriptors to /media/vivek/Misc/SelfWork/ProjectRepo/Training/bundle/target/scr-plugin-generated/OSGI-INF/metatype/metatype.xml
+[INFO] Writing abstract service descriptor /media/vivek/Misc/SelfWork/ProjectRepo/Training/bundle/target/scr-plugin-generated/OSGI-INF/scr-plugin/scrinfo.xml with 9 entries.
+[INFO] Generating 9 Service Component Descriptors to /media/vivek/Misc/SelfWork/ProjectRepo/Training/bundle/target/scr-plugin-generated/OSGI-INF/serviceComponents.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Training-bundle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /media/vivek/Misc/SelfWork/ProjectRepo/Training/bundle/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Training-bundle ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /media/vivek/Misc/SelfWork/ProjectRepo/Training/bundle/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ Training-bundle ---
+[INFO] Surefire report directory: /media/vivek/Misc/SelfWork/ProjectRepo/Training/bundle/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.aem.SimpleUnitTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ Training-bundle ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ Training-bundle ---
+[INFO] Installing /media/vivek/Misc/SelfWork/ProjectRepo/Training/bundle/target/Training-bundle-1.0-SNAPSHOT.jar to /home/vivek/.m2/repository/aaem/Training-bundle/1.0-SNAPSHOT/Training-bundle-1.0-SNAPSHOT.jar
+[INFO] Installing /media/vivek/Misc/SelfWork/ProjectRepo/Training/bundle/pom.xml to /home/vivek/.m2/repository/aaem/Training-bundle/1.0-SNAPSHOT/Training-bundle-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ Training-bundle ---
+[INFO] Installing aaem/Training-bundle/1.0-SNAPSHOT/Training-bundle-1.0-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AEM Training Package 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Training-content ---
+[INFO] Deleting /media/vivek/Misc/SelfWork/ProjectRepo/Training/content/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Training-content ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 58 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Training-content ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- content-package-maven-plugin:0.0.20:check-signature (default-check-signature) @ Training-content ---
+[INFO] No signature defined. Skipping signature check.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Training-content ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /media/vivek/Misc/SelfWork/ProjectRepo/Training/content/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Training-content ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ Training-content ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- content-package-maven-plugin:0.0.20:package (default-package) @ Training-content ---
+[INFO] Embedding --- Embedded: groupId=aaem,artifactId=Training-bundle,filter=false,excludeTransitive=false,target=/apps/aemproject/install/ ---
+[INFO] Embedding aaem:Training-bundle:jar:1.0-SNAPSHOT (from /media/vivek/Misc/SelfWork/ProjectRepo/Training/bundle/target/Training-bundle-1.0-SNAPSHOT.jar) -> jcr_root/apps/aemproject/install/Training-bundle-1.0-SNAPSHOT.jar
+[INFO] Merging /media/vivek/Misc/SelfWork/ProjectRepo/Training/content/src/main/content/META-INF/vault/filter.xml with inlined filter specifications.
+[INFO] Building content-package: /media/vivek/Misc/SelfWork/ProjectRepo/Training/content/target/Training-content-1.0-SNAPSHOT.zip
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ Training-content ---
+[INFO] Installing /media/vivek/Misc/SelfWork/ProjectRepo/Training/content/target/Training-content-1.0-SNAPSHOT.zip to /home/vivek/.m2/repository/aaem/Training-content/1.0-SNAPSHOT/Training-content-1.0-SNAPSHOT.zip
+[INFO] Installing /media/vivek/Misc/SelfWork/ProjectRepo/Training/content/pom.xml to /home/vivek/.m2/repository/aaem/Training-content/1.0-SNAPSHOT/Training-content-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] AEM Training - Reactor Project .................... SUCCESS [0.212s]
+[INFO] AEM Training Bundle ............................... SUCCESS [5.276s]
+[INFO] AEM Training Package .............................. SUCCESS [1.258s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.123s
+[INFO] Finished at: Sat Jan 17 22:17:07 IST 2015
+[INFO] Final Memory: 25M/343M
+[INFO] ------------------------------------------------------------------------

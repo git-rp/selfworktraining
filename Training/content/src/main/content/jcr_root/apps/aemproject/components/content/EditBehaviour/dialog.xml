@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Tab 1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter Title"
+                        name="./title"
+                        xtye="textfield"/>
+                    <description
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter Description"
+                        name="./desc"
+                        xtye="textfield"/>
+                    <selection1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Select Country"
+                        type="select"
+                        xype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <one
+                                jcr:primaryType="nt:unstructured"
+                                text="india"
+                                value="india"/>
+                            <two
+                                jcr:primaryType="nt:unstructured"
+                                text="USA"
+                                value="usa"/>
+                        </options>
+                    </selection1>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Widget"
+                ddGroups="[media]"
+                fileNameParameter="/fileName"
+                fileReferenceParameter="/fileReference"
+                name="/file"
+                requestSuffix=".img.png"
+                sizeLimit="100"
+                title="Image"
+                xtype="html5smartimage"/>
+        </items>
+    </items>
+</jcr:root>

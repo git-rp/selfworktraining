@@ -1,0 +1,7 @@
+body { margin: 0; padding: 0;}
+a {}
+#container {width: 900px; margin: 0; padding: 0; }
+#header {width: 900px; 	height: 150px; 	margin: 0; padding: 0; border: 0; }
+#sidebar {width: 200px; height: 400px; 	margin: 0; padding: 0; border: 0; float: left; }
+#content {width: 700px; height: 400px; 	margin: 0; padding: 0; border: 0; float: left; }
+#footer {width: 900px; 	height: 70px; 	margin: 0; padding: 0; border: 0; float: left; clear:both;}
